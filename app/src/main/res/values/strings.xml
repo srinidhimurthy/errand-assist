@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">ErrandAssist</string>
+    <string name="login_button_text">Login</string>
+    <string name="signup_button_text">Sign Up</string>
+    <string name="username">Phone Number or Email</string>
+    <string name="password">Password</string>
 
     <string-array name="areas">
         <item>Rajajinagar</item>
