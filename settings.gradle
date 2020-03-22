@@ -1,0 +1,2 @@
+rootProject.name='ErrandAssist'
+include ':app'
