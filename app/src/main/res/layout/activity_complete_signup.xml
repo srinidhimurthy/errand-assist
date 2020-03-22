@@ -51,4 +51,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/confirmPasswordField" />
 
+    <Button
+        android:id="@+id/complete_sign_up"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="212dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="220dp"
+        android:text="Complete Sign-up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Area" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
