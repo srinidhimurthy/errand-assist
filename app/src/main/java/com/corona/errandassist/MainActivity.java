@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onSignUpClicked(View view) {
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        Intent intent = new Intent(this, CompleteSignUpActivity.class);
         EditText editText = (EditText) findViewById(R.id.fNameField);
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
