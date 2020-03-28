@@ -33,11 +33,20 @@ public class SignupTextWatcher implements TextWatcher {
         String emailID = userEmail.getText().toString();
         String phoneNumber = userPhoneNumber.getText().toString();
 
-        boolean enableSignupButton = !(fName.isEmpty() || lName.isEmpty() || emailID.isEmpty() || phoneNumber.isEmpty());
-
-
+        boolean enableSignupButton = !(fName.isEmpty() || lName.isEmpty() || emailID.isEmpty() || phoneNumber.isEmpty() || !validatePhoneNumberField(phoneNumber));
 
         signUpButton.setEnabled(enableSignupButton);
+    }
+
+    private boolean validatePhoneNumberField(String phoneNumber) {
+        if(phoneNumber.length() !=10 ){
+            userPhoneNumber.setError("Phone number should be 10 digits");
+            return false;
+        }
+        else{
+            userPhoneNumber.setError(null);
+            return true;
+        }
     }
 
     @Override
